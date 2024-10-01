@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <form id="formDatos">
+        <h3>Form Datos</h3>
+
+        <label for="filtro">Filtrar por:</label>
+        <select name="filtro" id="filtro">
+            <option value="0" selected>Todos</option>
+            <option value="1">Aereos</option>
+            <option value="2">Terrestres</option>
+        </select><br>
+
+        <label for="columnas">Mostrar columnas:</label>
+        <input type="checkbox" id="chkid" checked><label for="chkid">ID</label>
+        <input type="checkbox" id="chkModelo" checked><label for="chkModelo">Modelo</label>
+        <input type="checkbox" id="chkAnoFab" checked><label for="chkAnoFab">Año fab</label>
+        <input type="checkbox" id="chkVelMax" checked><label for="chkVelMax">Vel Max</label>
+        <input type="checkbox" id="chkAltMax" checked><label for="chkAltMax">Alt Max</label>
+        <input type="checkbox" id="chkAutonomia" checked><label for="chkAutonomia">Autonomia</label>
+        <input type="checkbox" id="chkCantPue" checked><label for="chkCantPue">Cant Pue</label>
+        <input type="checkbox" id="chkCantRue" checked><label for="chkCantRue">Cant Rue</label>
+
+        <label>Promedio Velocidad Maxima:</label>
+        <input type="text" id="promedioVelocidad" readonly>
+        <input type="button" id="calcularBtn" value="Calcular" ><br>
+
+        <table id="miTabla">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+
+        <input type="submit" id="agregarBtn" value="Agregar">
+    </form>
+
+
+    <form id="formABM" style="display:none;">
+        <h3>Form ABM</h3>
+        <label for="abmId">ID:</label><input type="text" id="abmId" readonly><br>
+        <label for="abmModelo">Modelo:</label><input type="text" id="abmModelo"><br>
+        <label for="abmAnoFab">Año Fabricación:</label><input type="text" id="abmAnoFab"><br>
+        <label for="abmVelMax">Velocidad Maxima:</label><input type="number" id="abmVelMax"><br>
+        <label for="tipoVehiculo">Tipo:</label>
+        <select name="tipoVehiculo" id="tipoVehiculo">
+            <option value="0" selected></option>
+            <option value="1">Aereo</option>
+            <option value="2">Terrestre</option>
+        </select><br>
+        <label id="lblAltMax" for="abmAltMax">Altura Maxima:</label><input type="number" id="abmAltMax"><br>
+        <label id="lblAutonomia"" for="abmAutonomia">Autonomia:</label><input type="number" id="abmAutonomia"><br>
+        <label id="lblCantPue" for="abmCantPue">Cantidad Puertas:</label><input type="number" id="abmCantPue"><br>
+        <label id="lblCantRue" for="abmCantRue">Cantidad Ruedas:</label><input type="number" id="abmCantRue"><br>
+        
+        <input type="button" id="guardarBtn" value="Guardar">
+        <input type="button" id="modificarBtn" value="Modificar">
+        <input type="button" id="eliminarBtn" value="Eliminar">
+        <input type="button" id="cancelarBtn" value="Cancelar">
+    </form>
+    
+</body>
+</html>

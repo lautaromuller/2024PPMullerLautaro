@@ -1,0 +1,78 @@
+*{
+    user-select: none;
+}
+
+h3{
+    margin: 0 0 5px 0;
+}
+
+#formDatos{
+    width: 800px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+label, select, input{
+    margin: 10px 0;
+}
+
+#promedioEdad:focus{
+    outline: none;
+}
+
+#formDatos input[type="button"]{
+    cursor: pointer;
+}
+
+input[type='checkbox']{
+    margin: 0 2px 0 12px;
+}
+
+table{
+    margin: auto;
+}
+
+th{
+    background-color: rgb(168, 236, 214);
+    cursor: pointer;
+}
+
+table, td, th{
+    margin-top: 6px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    width: 90px;
+}
+
+#formDatos input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin-bottom: -2px;
+    cursor: pointer;
+}
+
+#formABM{
+    border: 2px solid black;
+    width: 420px;
+    padding-left: 15px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#formABM input[type="button"]{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#formABM input{
+    margin-left: 10px;
+    width: 250px;
+}
+
